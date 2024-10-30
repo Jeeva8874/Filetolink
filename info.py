@@ -4,10 +4,10 @@ from os import environ
 id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
-SESSION = environ.get('SESSION', 'TechVJBot')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+SESSION = environ.get('SESSION', 'FileToLink')
+API_ID = int(environ.get('API_ID', '22977776'))
+API_HASH = environ.get('API_HASH', '2ac7223d720bdeec757cbc88ced57224')
+BOT_TOKEN = environ.get('BOT_TOKEN', "8016996500:AAEqLxci47OQCcI_8TZBfnQ4khe3W5zl2ys")
 
 # Bot settings
 PORT = environ.get("PORT", "8080")
@@ -24,7 +24,7 @@ URL = environ.get("URL", "")
 
 # Admins, Channels & Users
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6762558871').split()]
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "")
